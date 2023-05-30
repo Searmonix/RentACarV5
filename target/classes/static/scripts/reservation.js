@@ -6,7 +6,7 @@ function loadEvents() {
 
 function selectClient() {
     $.ajax({
-        url: 'http://localhost:8080/api/Client/all',
+        url: 'http://140.238.190.51:8080/api/Client/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -28,7 +28,7 @@ function selectClient() {
 
 function selectCar() {
     $.ajax({
-        url: 'http://localhost:8080/api/Car/all',
+        url: 'http://140.238.190.51:8080/api/Car/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -49,7 +49,7 @@ function selectCar() {
 }
 function getElements() {
     $.ajax({
-        url: 'http://localhost:8080/api/Reservation/all',
+        url: 'http://140.238.190.51:8080/api/Reservation/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -71,7 +71,7 @@ function saveElement() {
     };
 
     $.ajax({
-        url: 'http://localhost:8080/api/Reservation/save',
+        url: 'http://140.238.190.51:8080/api/Reservation/save',
         type:'POST',                             
         contentType:'application/json',         
         data: JSON.stringify(elementToSend),       

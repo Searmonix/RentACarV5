@@ -6,7 +6,7 @@ function loadEvents() {
 function selectGama() {
     // Una función que llame las gamas existentes para poder mostrarlas sin la necesidad de un id
     $.ajax({
-        url: 'http://localhost:8080/api/Gama/all',
+        url: 'http://140.238.190.51:8080/api/Gama/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -29,7 +29,7 @@ function selectGama() {
 
 function getElements() {
     $.ajax({
-        url: 'http://localhost:8080/api/Car/all',
+        url: 'http://140.238.190.51:8080/api/Car/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -52,7 +52,7 @@ function saveElement() {
     };
 
     $.ajax({
-        url: 'http://localhost:8080/api/Car/save',
+        url: 'http://140.238.190.51:8080/api/Car/save',
         type:'POST',                             
         contentType:'application/json',         
         data: JSON.stringify(elementToSend),       

@@ -4,7 +4,7 @@ function showDataById() {
 
 
     $.ajax({
-        url: 'http://localhost:8080/api/'+tableType+'/'+id,
+        url: 'http://140.238.190.51:8080/api/'+tableType+'/'+id,
         type:'GET',
         dataType:'json',                          
         success: function(response){  
@@ -81,7 +81,7 @@ function elementToDeleted() {
     }
 
     $.ajax({
-        url: 'http://localhost:8080/api'+tableType,
+        url: 'http://140.238.190.51:8080/api'+tableType,
         type:'DELETE',
         contentType:'application/json',  
         data: JSON.stringify(elementToDelete),     
@@ -116,7 +116,7 @@ function elementToUpdate() {
     }
 
     $.ajax({
-        url: 'http://localhost:8080/api/'+tableType,
+        url: 'http://140.238.190.51:8080/api/'+tableType,
         type:'PUT',
         contentType:'application/json',
         data: JSON.stringify(element),   

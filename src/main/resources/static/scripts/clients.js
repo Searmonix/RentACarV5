@@ -1,6 +1,6 @@
 function getElements() {
     $.ajax({
-        url: 'http://localhost:8080/api/Client/all',
+        url: 'http://140.238.190.51:8080/api/Client/all',
         type:'GET',
         dataType:'json',                           
         success: function(response){    
@@ -22,7 +22,7 @@ function saveElement() {
     };
 
     $.ajax({
-        url: 'http://localhost:8080/api/Client/save',
+        url: 'http://140.238.190.51:8080/api/Client/save',
         type:'POST',                             
         contentType:'application/json',         
         data: JSON.stringify(elementToSend),       
