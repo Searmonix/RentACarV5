@@ -1,0 +1,36 @@
+html {
+    color-scheme: black;
+}
+
+body {
+    color:rgb(0, 0, 0);
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: min(900px, 100% - 3rem);
+    margin-inline: auto;
+}
+
+table {
+    width: 25%;
+    border-collapse: collapse;
+    color: black; 
+}
+
+th {
+    background:rgb(184, 184, 184);
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+td {
+    background:rgba(191, 195, 163, 0.228) ;
+    padding: 0.5rem;
+    text-align: left;
+}
+

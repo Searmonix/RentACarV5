@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="./scripts/score.js"></script>
+    <script defer src="./scripts/generalScripts.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body onload="getElements()">
+    <div>
+        <table id="table"></table>
+    </div>
+
+    <h3>Agregar Puntaje</h3>
+    
+    <div>
+        <input type="number" id="idScore" placeholder="Id del puntaje"><br></br>
+        <input type="number" id="stars" placeholder="Puntaje"><br></br>
+        <input id="messageText" placeholder="Mensaje"><br></br>
+    </div>
+
+    <button onclick="saveElement()">Guardar</button>
+    <button onclick="location.href='homePage.html'">Volver</button>
+</body>
+</html>
